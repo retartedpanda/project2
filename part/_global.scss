@@ -25,7 +25,11 @@ section {
 main {
     @extend %item;
     display: flex;
+    height: 100%;
 }
 a {
     text-decoration: none;
+    display: block;
+    color: $white;
+    text-transform: uppercase;
 }

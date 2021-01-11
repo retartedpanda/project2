@@ -1,0 +1,13 @@
+.app1 {
+    background-image:url(/app/img/app1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    main {
+            justify-content: flex-end;
+    }
+    &_item {
+        flex-basis: 40%;
+        color:$white
+    }
+}

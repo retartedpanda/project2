@@ -1,0 +1,26 @@
+.about {
+    color:$fyx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main {
+        justify-content: space-between;
+        align-items: center;
+        @include tf {
+            flex-direction: column;
+        }
+    }
+    h2 {
+        color:$bordo;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &_item {
+        
+        flex-basis:40%;
+        @include tf {
+            margin-bottom: 60px;
+            text-align: center;    
+        }
+    }
+}
