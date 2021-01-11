@@ -1,0 +1,102 @@
+.header {
+    background: linear-gradient(90deg, #7F2F4A 10.63%, #384C85 88.13%), #FFFFFF; 
+    color:$white;
+    @include ipad {
+        min-height: 100%;
+    }
+   main {
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   &_menu {
+       border-bottom: 1px solid $white;
+       display: flex;
+       justify-content: space-between;
+       padding-bottom: 64px;
+       @include ipad {
+           flex-direction: column;
+           text-align: center;
+           border-bottom: 0;
+       }
+       
+   }
+   &_logo{
+       width: 132px;
+       @include ipad {
+           width: 100%;
+           margin-bottom: 46px;
+           border-bottom:1px solid $white;
+           padding-bottom: 13px;
+       }
+   }
+   &_ul {
+       list-style-type: none;
+       display: flex;
+       justify-content: center;
+    
+    @include tf {
+        display: none;
+    }
+   }
+   &_li {
+       margin-left: 69px;
+       font-size: 16px;
+       line-height: 24px;
+       &::after{
+           content:"";
+           display:block;
+           border-bottom:1px solid $white;
+           margin-top:21px;
+           transform: scale(0);
+           transition: all 0.3s;
+       }
+       &:hover::after{
+            transform: scale(1);
+       }
+     @include ipad {
+         margin:0px 35px;
+        
+     }  
+   }
+   a {
+       color:$white;
+       display: block;
+   }
+   &_text {
+       font-size: 50px;
+       line-height: 75px;
+       letter-spacing: 10px;
+       margin:40px 0;
+       @include ipad {
+           text-align: center;
+       }
+   }
+   
+  }   
+//     &_item {
+//         @extend %item;
+//         text-align: center;
+//     }
+//     &_menu{
+//         display: flex;
+//         justify-content: space-between;
+        
+        
+//     }
+//     &_ul {
+//         display: flex;
+//     }
+//     &_li {
+//         list-style-type: none;
+//         margin-right: 70px;
+
+//         &_li:nth-last-child(1)
+//         {
+//             margin-right: 0px;
+//         }
+//         &_li:first-child{
+//             border-bottom: 1px solid $white;
+//         }
+//     }
+// }
+

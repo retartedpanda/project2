@@ -1,0 +1,23 @@
+$font:Abel,sans-serif;
+$siren:#551A8B;
+$bordo:#7F2F4A;
+$fyx:#384C85;
+$white:#FFFFFF;
+
+
+%item {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    }
+
+    @mixin ipad {
+        @media screen and (max-width:768px) {
+            @content;
+        }
+    }
+    @mixin  tf {
+        @media screen and (max-width:520px) {
+            @content;
+        }
+    }
