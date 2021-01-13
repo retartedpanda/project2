@@ -7,8 +7,15 @@
     main {
         justify-content: space-between;
         align-items: center;
+        color:$white;
+        @include tf {
+            flex-direction: column;
+        }
     }
     &_but {
         margin-top: 0;
+        @include tf {
+            margin-top: 50px;
+        }
     }
 }

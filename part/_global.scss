@@ -21,6 +21,7 @@ section {
     min-height: 512px;
     border-bottom: 1px solid $bordo;
     padding: 57px 0;
+    display: block;
 }
 main {
     @extend %item;

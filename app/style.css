@@ -20,7 +20,8 @@ body {
 section {
   min-height: 512px;
   border-bottom: 1px solid #7F2F4A;
-  padding: 57px 0; }
+  padding: 57px 0;
+  display: block; }
 
 main {
   display: flex;
@@ -129,17 +130,27 @@ a {
   align-items: center; }
   .footer main {
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    color: #FFFFFF; }
+    @media screen and (max-width: 520px) {
+      .footer main {
+        flex-direction: column; } }
   .footer_but {
     margin-top: 0; }
+    @media screen and (max-width: 520px) {
+      .footer_but {
+        margin-top: 50px; } }
 
 .app1 {
   background-image: url(/app/img/app1.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center top; }
   .app1 main {
     justify-content: flex-end; }
+    @media screen and (max-width: 768px) {
+      .app1 main {
+        justify-content: center; } }
   .app1_item {
     flex-basis: 40%;
     color: #FFFFFF; }
@@ -147,10 +158,16 @@ a {
 .app2 {
   background-image: url(/app/img/6f8d5e07907148d263048ec5f3ba10ec.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center top; }
+  @media screen and (max-width: 520px) {
+    .app2 {
+      display: none; } }
   .app2 main {
     justify-content: flex-end; }
+    @media screen and (max-width: 768px) {
+      .app2 main {
+        justify-content: center; } }
   .app2_item {
     flex-basis: 40%;
     color: #FFFFFF; }
