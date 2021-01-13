@@ -1,4 +1,4 @@
-.about {
+.contacts {
     color:$fyx;
     display: flex;
     justify-content: center;
@@ -15,12 +15,14 @@
         text-transform: uppercase;
         margin-bottom: 25px;
     }
-    &_item {
-        
-        flex-basis:40%;
+    &_item {        
+        flex-basis:50% 40%;
         @include tf {
             margin-bottom: 60px;
             text-align: center;    
         }
+    }
+    &_text {
+        color: $bordo;
     }
 }

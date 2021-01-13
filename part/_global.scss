@@ -26,10 +26,21 @@ main {
     @extend %item;
     display: flex;
     height: 100%;
+    letter-spacing: 10%;
 }
 a {
     text-decoration: none;
     display: block;
     color: $white;
     text-transform: uppercase;
+    // border: 1px solid $white;
+    // border-radius: 5px;
+    
+}
+.buttun {
+    border: 1px solid $white;
+    border-radius: 5px;
+    text-align: center;
+    width: 210px;
+    margin-top:57px;    
 }

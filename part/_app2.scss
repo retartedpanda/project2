@@ -1,0 +1,13 @@
+.app2 {
+    background-image:url(/app/img/6f8d5e07907148d263048ec5f3ba10ec.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    main {
+            justify-content: flex-end;
+    }
+    &_item {
+        flex-basis: 40%;
+        color:$white
+    }
+}

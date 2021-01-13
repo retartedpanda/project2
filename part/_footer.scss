@@ -1,3 +1,14 @@
 .footer {
     min-height: 231px;
+    background-color: $fyx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    main {
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_but {
+        margin-top: 0;
+    }
 }
