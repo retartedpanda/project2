@@ -4,6 +4,10 @@
     // background-size: 100%;
     background-size: cover;
     background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @include tf {
         display: none;
     }
@@ -16,6 +20,11 @@
     }
     &_item {
         flex-basis: 40%;
-        color:$white
+        color:$white;
+        @include ipad {
+            justify-content: center;
+            flex-basis: 80%;
+          }
+        
     }
 }

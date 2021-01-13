@@ -19,7 +19,6 @@ body {
 
 section {
   min-height: 512px;
-  border-bottom: 1px solid #7F2F4A;
   padding: 57px 0;
   display: block; }
 
@@ -33,20 +32,27 @@ a {
   display: block;
   color: #FFFFFF;
   text-transform: uppercase; }
+  @media screen and (max-width: 520px) {
+    a {
+      margin: 0 auto;
+      text-align: center; }
+      a .buttun {
+        margin: 57px 0px 0px 0px; } }
 
 .buttun {
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   text-align: center;
   width: 210px;
-  margin-top: 57px; }
+  margin: 57px auto; }
 
 .header {
   background: linear-gradient(90deg, #7F2F4A 10.63%, #384C85 88.13%), #FFFFFF;
   color: #FFFFFF; }
   @media screen and (max-width: 768px) {
     .header {
-      min-height: 100%; } }
+      min-height: 100%;
+      text-align: center; } }
   .header main {
     flex-direction: column;
     justify-content: space-between; }
@@ -59,7 +65,8 @@ a {
       .header_menu {
         flex-direction: column;
         text-align: center;
-        border-bottom: 0; } }
+        border-bottom: 0;
+        text-align: center; } }
   .header_logo {
     width: 132px; }
     @media screen and (max-width: 768px) {
@@ -67,14 +74,18 @@ a {
         width: 100%;
         margin-bottom: 46px;
         border-bottom: 1px solid #FFFFFF;
-        padding-bottom: 13px; } }
+        padding-bottom: 13px;
+        text-align: center; } }
   .header_ul {
     list-style-type: none;
     display: flex;
     justify-content: center; }
     @media screen and (max-width: 520px) {
       .header_ul {
-        display: none; } }
+        display: none;
+        text-align: center; }
+        .header_ul .buttun {
+          margin: 57px 0px 0px 0px; } }
   .header_li {
     margin-left: 69px;
     font-size: 16px;
@@ -90,7 +101,8 @@ a {
       transform: scale(1); }
     @media screen and (max-width: 768px) {
       .header_li {
-        margin: 0px 35px; } }
+        margin: 0px 35px;
+        text-align: center; } }
   .header_text {
     font-size: 50px;
     line-height: 75px;
@@ -98,6 +110,7 @@ a {
     margin: 40px 0; }
     @media screen and (max-width: 768px) {
       .header_text {
+        text-align: center;
         text-align: center; } }
 
 .about {
@@ -110,7 +123,10 @@ a {
     align-items: center; }
     @media screen and (max-width: 520px) {
       .about main {
-        flex-direction: column; } }
+        flex-direction: column;
+        text-align: center; }
+        .about main .buttun {
+          margin: 57px 0px 0px 0px; } }
   .about h2 {
     color: #7F2F4A;
     text-transform: uppercase;
@@ -120,7 +136,10 @@ a {
     @media screen and (max-width: 520px) {
       .about_item {
         margin-bottom: 60px;
-        text-align: center; } }
+        text-align: center;
+        text-align: center; }
+        .about_item .buttun {
+          margin: 57px 0px 0px 0px; } }
 
 .footer {
   min-height: 231px;
@@ -134,43 +153,78 @@ a {
     color: #FFFFFF; }
     @media screen and (max-width: 520px) {
       .footer main {
-        flex-direction: column; } }
+        flex-direction: column;
+        text-align: center; }
+        .footer main .buttun {
+          margin: 57px 0px 0px 0px; } }
   .footer_but {
     margin-top: 0; }
     @media screen and (max-width: 520px) {
       .footer_but {
-        margin-top: 50px; } }
+        margin-top: 50px;
+        text-align: center; }
+        .footer_but .buttun {
+          margin: 57px 0px 0px 0px; } }
 
 .app1 {
   background-image: url(/app/img/app1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top; }
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .app1 main {
     justify-content: flex-end; }
     @media screen and (max-width: 768px) {
       .app1 main {
-        justify-content: center; } }
+        justify-content: center;
+        text-align: center; } }
   .app1_item {
     flex-basis: 40%;
     color: #FFFFFF; }
+    @media screen and (max-width: 768px) {
+      .app1_item {
+        justify-content: center;
+        flex-basis: 80%;
+        text-align: center; } }
+    @media screen and (max-width: 520px) {
+      .app1_item {
+        flex-basis: 80%;
+        text-align: center; }
+        .app1_item .buttun {
+          margin: 57px 0px 0px 0px; } }
+  .app1 .buttun {
+    margin: 57px auto; }
 
 .app2 {
   background-image: url(/app/img/6f8d5e07907148d263048ec5f3ba10ec.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top; }
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   @media screen and (max-width: 520px) {
     .app2 {
-      display: none; } }
+      display: none;
+      text-align: center; }
+      .app2 .buttun {
+        margin: 57px 0px 0px 0px; } }
   .app2 main {
     justify-content: flex-end; }
     @media screen and (max-width: 768px) {
       .app2 main {
-        justify-content: center; } }
+        justify-content: center;
+        text-align: center; } }
   .app2_item {
     flex-basis: 40%;
     color: #FFFFFF; }
+    @media screen and (max-width: 768px) {
+      .app2_item {
+        justify-content: center;
+        flex-basis: 80%;
+        text-align: center; } }
 
 .contacts {
   color: #384C85;
@@ -182,7 +236,10 @@ a {
     align-items: center; }
     @media screen and (max-width: 520px) {
       .contacts main {
-        flex-direction: column; } }
+        flex-direction: column;
+        text-align: center; }
+        .contacts main .buttun {
+          margin: 57px 0px 0px 0px; } }
   .contacts h2 {
     color: #7F2F4A;
     text-transform: uppercase;
@@ -192,7 +249,10 @@ a {
     @media screen and (max-width: 520px) {
       .contacts_item {
         margin-bottom: 60px;
-        text-align: center; } }
+        text-align: center;
+        text-align: center; }
+        .contacts_item .buttun {
+          margin: 57px 0px 0px 0px; } }
   .contacts_text {
     color: #7F2F4A; }
 

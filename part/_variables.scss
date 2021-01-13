@@ -14,10 +14,16 @@ $white:#FFFFFF;
     @mixin ipad {
         @media screen and (max-width:768px) {
             @content;
+            text-align: center;
+           
         }
     }
     @mixin  tf {
         @media screen and (max-width:520px) {
             @content;
+            text-align: center;
+            .buttun {
+                margin: 57px 0px 0px 0px;
+            }
         }
     }

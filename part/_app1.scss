@@ -4,6 +4,9 @@
     // background-size: 100%;
     background-size: cover;
     background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
     main {
@@ -15,5 +18,15 @@
     &_item {
         flex-basis: 40%;
         color:$white;
-    }   
+        @include ipad {
+            justify-content: center;
+            flex-basis: 80%;
+          }
+        @include tf {
+            flex-basis: 80%;
         }
+    } 
+    .buttun {
+        margin: 57px auto;
+    }
+}     
